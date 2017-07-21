@@ -1,0 +1,77 @@
+Make the language a seperate repo move it to the SKOMOBO orignaisation and use antlr with this repo  https://github.com/antlr/grammars-v4/tree/master/cpp
+
+Wite it with Common Lisp because it is seperate project and we don't want to couple it with the languages we are using in the project it is supposed to abstract us away from those ask don't have to use antlr but maybe hat would be easier?!
+
+
+End goal:
+
+Main.drk
+
+Make a way to define a common list and enumerate over it
+
+Setup: TEMP, DUST, CO2 etc
+
+Loop: TEMP DUST CO2 etc 
+
+----------
+Sensors: Temp Dust etc
+
+Setup: Sensors OLED SD WIFI
+
+Loop: Sensors save_sensors
+
+----------
+
+Temp.drk
+
+Multiple lines allowed :)
+
+
+Normal c++ block which the compiler copies
+Directly, useful for function definitions include statements etc till I find a nice way to do those 
+~~~~~~~~
+#include "SPI.h"
+
+void save(){
+
+}
+~~~~~~~~
+
+Setup: jskdnwkdnd
+Sir kwndms
+
+Loop: heir elf 
+JFK for elf 
+And wmd 
+
+
+Make a way to define easy custom protocols that are lightweight that the server and client automatically agree on because they share the same information 
+
+
+To generate ASTS of the languages we use, then make adjustments to extend the grammars and then take the resulting and make my own compiler in c++ java, Kotlin or clojure and have it produce the source code 
+
+
+All we do is use antlr or my own c++ / javascript compiler, probably c++ cus it produces a executable 
+
+Add setup and loop to raspi 
+
+Setup and loop are special any sensor automatically has  _prepended to name  _setup  or _loop appended 
+
+Each ino file then has its own setup and loop that has the file name appended to it following previous style
+
+Copy vscode syntax files from GitHub repos files the languages I'm extending 
+
+For now use it to make code nicer eg in loop and setup allow me to setup a seperate setup and loop in every ino file 
+
+
+
+
+
+
+IOT consists of a few distinct parts
+
+The protocols used to transmit data from the sensors to the server 
+
+The sensors themselves with their own protocols communicating with a MCU
+
+a server that accumulates and sometimes decodes the data 
