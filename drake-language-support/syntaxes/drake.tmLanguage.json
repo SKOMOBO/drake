@@ -1,0 +1,36 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "drake",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.drake",
+				"match": "\\b(if|while|for|return)\\b"
+			},
+			{
+				"name":"keyword.operator.setup",
+				"match": "setup:"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.drake",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.drake",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": ""
+}

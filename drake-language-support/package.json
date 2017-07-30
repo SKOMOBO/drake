@@ -1,0 +1,26 @@
+{
+    "name": "drake-language-support",
+    "displayName": "Drake language support",
+    "description": "Support for the Drake DSL",
+    "version": "0.0.1",
+    "publisher": "Ulfasaar",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "drake",
+            "aliases": ["drake", "drake"],
+            "extensions": [".drk"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "drake",
+            "scopeName": "",
+            "path": "./syntaxes/drake.tmLanguage.json"
+        }]
+    }
+}
