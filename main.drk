@@ -1,0 +1,8 @@
+
+sensors: temp humidity co2 pir
+
+setup: sd oled sensors
+
+loop: sensors
+
+
